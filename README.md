@@ -1,4 +1,4 @@
-Quick and dirty hack to proof of concept wrapping a Python env into docker
+# Quick and dirty hack to proof of concept wrapping a Python env into docker
 
 for the #devkini folks.
 
@@ -17,3 +17,5 @@ Just so you can run and test a version of wagtail, and build on it, without worr
 Well, not so good of an example, because it not that hard to get set up.
 
 But since the entire wagtail is in a container, you can do thing such as re-tagging them and uploading to a docker registry you control, so if you run more than once instance over more than one server, e.g. loadbalancing, your downloads and redeploys are *much* faster than waiting for git or docker pull to grab them over the Internet, effectively doing vendoring for your applications.
+
+No, don't use this for production.
